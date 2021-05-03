@@ -1,16 +1,19 @@
 import React from 'react';
-import Profile from './components/Profile';
+
+import Profile from './components/Profile/Profile';
+import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+
 import user from './user.json';
-import Statistics from './components/Statistics';
 import statisticalData from './statistical-data.json';
-import FriendList from './components/FriendList';
 import friends from './friends.json';
-import TransactionHistory from './components/TransactionHistory';
 import transactions from './transactions.json';
+import './Container.css';
 
 const App = () => {
   return (
-    <div>
+    <div className="Container">
       <Profile
          name={user.name}
          tag={user.tag}

@@ -10,7 +10,7 @@ const Profile = ({ name, tag, location, avatar, stats }) => (
       class="avatar"
     />
     <p class="name">{name}</p>
-    <p class="tag">{tag}</p>
+    <p class="tag">@{tag}</p>
     <p class="location">{location}</p>
   </div>
 
